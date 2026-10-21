@@ -1,0 +1,9 @@
+# Local tooling only (profiling, evidence, chart, tests). The Airflow image needs nothing
+# beyond requirements.txt: pandas, duckdb and pendulum are already installed there.
+#   python -m venv .venv && .venv/Scripts/pip install -r tools/requirements-dev.txt
+pandas==2.3.3
+duckdb==2.0.0
+pendulum
+tabulate
+matplotlib
+pytest

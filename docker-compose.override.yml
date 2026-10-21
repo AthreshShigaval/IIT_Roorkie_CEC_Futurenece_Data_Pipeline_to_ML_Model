@@ -1,0 +1,26 @@
+# Workaround: the Astro CLI writes '&' in the project path as '&amp;' in its generated
+# compose file ("M2 Data & Pipeline Thinking"), so dags/ and include/ mount as empty folders.
+# Relative paths here are resolved by Docker Compose itself and override those mounts.
+services:
+  scheduler:
+    volumes:
+      - ./dags:/usr/local/airflow/dags:rw
+      - ./include:/usr/local/airflow/include:rw
+      - ./plugins:/usr/local/airflow/plugins:rw
+      - ./tests:/usr/local/airflow/tests:rw
+  dag-processor:
+    volumes:
+      - ./dags:/usr/local/airflow/dags:rw
+      - ./include:/usr/local/airflow/include:rw
+      - ./plugins:/usr/local/airflow/plugins:rw
+      - ./tests:/usr/local/airflow/tests:rw
+  triggerer:
+    volumes:
+      - ./dags:/usr/local/airflow/dags:rw
+      - ./include:/usr/local/airflow/include:rw
+      - ./plugins:/usr/local/airflow/plugins:rw
+  api-server:
+    volumes:
+      - ./dags:/usr/local/airflow/dags:rw
+      - ./include:/usr/local/airflow/include:rw
+      - ./plugins:/usr/local/airflow/plugins:rw

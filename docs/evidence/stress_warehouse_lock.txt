@@ -1,0 +1,2 @@
+duckdb.connect only    rows kept: 72 of 80
+warehouse.connect      rows kept: 80 of 80

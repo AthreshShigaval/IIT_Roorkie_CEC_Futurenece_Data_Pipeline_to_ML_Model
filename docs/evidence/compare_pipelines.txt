@@ -1,0 +1,19 @@
+
+== September totals (delivered, after discount)
+pipeline  delivered_orders  net_revenue  gross_margin
+     ETL              2078    1131435.1     259638.93
+     ELT              2078    1131435.1     259638.93
+
+== All orders in the reporting layer
+pipeline  orders  returned  net_revenue
+     ETL    2460        78    1211087.3
+     ELT    2460        78    1211087.3
+
+== Reconciliation
+pipeline  mismatches  unreconciled
+     ETL         193     129536.35
+     ELT         193     129536.35
+
+== order rows that differ: 0
+
+== reconciliation rows that differ: 0

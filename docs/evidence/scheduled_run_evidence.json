@@ -1,0 +1,28 @@
+[
+  {
+    "dag_id": "nammamart_etl_athresh",
+    "dag_run_id": "scheduled__2026-10-21T03:30:00+00:00",
+    "run_type": "scheduled",
+    "logical_date": "2026-10-21T03:30:00Z",
+    "run_after": "2026-10-21T03:30:00Z",
+    "queued_at": "2026-10-21T17:42:20.482596Z",
+    "start_date": "2026-10-21T17:42:20.711571Z",
+    "end_date": "2026-10-21T17:43:42.205405Z",
+    "state": "success",
+    "timetable": "0 9 * * 1-6",
+    "next_dagrun_run_after": "2026-10-22T03:30:00Z"
+  },
+  {
+    "dag_id": "nammamart_elt_athresh",
+    "dag_run_id": "scheduled__2026-10-21T03:30:00+00:00",
+    "run_type": "scheduled",
+    "logical_date": "2026-10-21T03:30:00Z",
+    "run_after": "2026-10-21T03:30:00Z",
+    "queued_at": "2026-10-21T17:42:37.637510Z",
+    "start_date": "2026-10-21T17:42:37.706439Z",
+    "end_date": "2026-10-21T17:43:43.398029Z",
+    "state": "success",
+    "timetable": "0 9 * * 1-6",
+    "next_dagrun_run_after": "2026-10-22T03:30:00Z"
+  }
+]

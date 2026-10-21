@@ -13,3 +13,9 @@ airflow.db
 .astro/*.local.yml
 .astro/*.local.yaml
 test_api.py 
+
+# NammaMart assignment (athresh): generated data that may contain unmasked customer PII
+include/warehouse_athresh.duckdb
+include/warehouse_athresh.duckdb.wal
+include/quarantine/athresh/
+include/data/experiments/
